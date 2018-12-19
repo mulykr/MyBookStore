@@ -1,0 +1,45 @@
+﻿@{
+    Layout = "~/Areas/Moderator/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Moderator";
+}
+
+<div class="row">
+    <div class="col-lg-6">
+        <h2>Welcome, moderator!</h2>
+        <p>
+            On this page you can observe base actions you can perform and try them all. Moderator role is defined to get access to provide CRUD actions to the catalog of books.
+        </p>
+    </div>
+    <div class="col-lg-6">
+        <div class="row">
+            <div class="col-sm-4" style="padding: 2em;">
+                <a asp-area="Moderator" asp-controller="Books" asp-action="Index">All books</a>
+            </div>
+            <div class="col-sm-4" style="padding: 2em;">
+                <a asp-area="Moderator" asp-controller="Books" asp-action="Create">Add book</a>
+            </div>
+            <div class="col-sm-4" style="padding: 2em;">
+                <a asp-area="Moderator" asp-controller="Books" asp-action="Edit">Edit book</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4" style="padding: 2em;">
+                <a asp-area="Moderator" asp-controller="Books" asp-action="Delete">Remove book</a>
+            </div>
+            <div class="col-sm-4" style="padding: 2em;">
+                <a asp-area="Moderator" asp-controller="ManageAuthors" asp-action="Get">All authors</a>
+            </div>
+            <div class="col-sm-4" style="padding: 2em;">
+                <a asp-area="Moderator" asp-controller="ManageAuthors" asp-action="Add">Add author</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4" style="padding: 2em;">
+                <a asp-area="Moderator" asp-controller="ManageAuthors" asp-action="Remove">Edit author</a>
+            </div>
+            <div class="col-sm-4" style="padding: 2em;">
+                <a asp-area="Moderator" asp-controller="ManageAuthors" asp-action="Remove">Remove author</a>
+            </div>
+        </div>
+    </div>
+</div>
